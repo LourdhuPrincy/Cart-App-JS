@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Poppins:ital,wght@0,600;1,600&family=Roboto:wght@400;700&display=swap');
+
+body{
+    margin:10px;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+}
+h1{
+    font-family:'Poppins', sans-serif ;
+    font-size:40px;
+    color:#160991;
+}
+nav{
+    height:100px;
+    width: 100%;
+}
+.nav-item ul{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap:30px;
+}
+li{
+    list-style-type: none;
+    font-size: 20px;
+    font-family:'Poppins', sans-serif;
+    font-weight: 600;
+    height: 45px;
+    width:250px;
+    background-color: #1b61b1;
+    color:#fff;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+li:first-child{
+    background-color: #1f6105;
+}
+.card-container{
+    margin-left: 50px;
+    height:full;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 400px);
+    gap:40px;
+}
+.card{
+    height:400px;
+    width:300px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-color:transparent;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px #1e1e1f;
+    gap:10px;
+}
+img{
+    height:40%;
+    width: 50%;
+}
+h2, h3, h4{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color:#000;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+h4{
+    font-size: 30px;
+    color:#d81212;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid #160991;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+button:hover{
+    background:linear-gradient(to right bottom, rgb(63, 15, 235), rgb(148, 10, 228));
+    color:#fff;
+}
+h2.cart-head{
+    display: none;
+    margin-top: 100px;
+    font-size: 30px;
+    color:#1b61b1
+}
+.cart-section{
+    height:full;
+    width:80%;
+    display:none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border:2px solid #8a8787
+}
+.headings{
+    height: 100px;
+    width: 100%;
+    display:grid;
+    grid-template-columns:repeat(6, 16%);
+    border-bottom: 1px solid #8a8787;
+}
+.headings h5{
+    font-size: 20px;
+    color:#000;
+    text-align: center;
+}
+.product-detail{
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.product{
+    height:70px;
+    width: 100%;
+    display:grid;
+    grid-template-columns:repeat(6, 16%);
+    border-bottom: 1px solid #8a8787;
+}
+.product-detail img{
+    height:40px;
+    width:40px;
+    margin-left: 30%;
+    margin-top:10px;
+}
+.product h4{
+    font-size: 20px;
+    color:#000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 15px;
+    text-align: center;
+}
+i:hover{
+   color:#d81212;
+}
+.total{
+    width: 100%;
+    text-align: center;    
+}
+.total h5{
+    font-size: 25px;
+    color:#000;
+   margin-left:60%;
+   margin-top:30px;
+}
+span{
+    color:#d81212;
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+h1{
+    font-size: 30px;
+}
+li{
+    font-size: 15px;
+    height: 45px;
+    width:200px;
+}
+.cards{
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3, 400px);
+}.headings h5{
+    font-size: 17px;
+}
+.product h4{
+    font-size: 15px;
+}
+.total h5{
+    margin-left:50%;
+}
+}
+
+@media screen and (max-width:768px){
+h1{
+    font-size: 25px;
+}
+nav{
+    height:100%;
+}
+.nav-item ul{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-flow:row wrap;
+    gap:30px;
+}
+li{
+    font-size:15px;
+    height: 45px;
+    width:200px;
+}
+.cards{
+    grid-template-columns: repeat(1, 300px);
+    grid-template-rows: repeat(6, 400px);
+}
+.cart-section{
+    width:98%;
+}
+.headings{
+    height: 80px;
+}
+.headings h5{
+    font-size: 12px;
+}
+.product h4{
+    font-size: 15px;
+}
+.total h5{
+    font-size: 20px;
+    margin-left: 45%;
+}
+}
