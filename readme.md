@@ -14,4 +14,6 @@
 - To remove a product from cart section there is a remove button. It will reduce the quantity of product by one.
 - The individual product's price based on the quantity and the total price will be automatically updated when we add or remove products.
 
+[live link](https://cart-app-js.netlify.app/)
+
 ![screen shot](./images/screen-shot.png)
